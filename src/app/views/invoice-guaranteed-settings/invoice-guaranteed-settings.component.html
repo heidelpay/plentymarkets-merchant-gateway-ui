@@ -1,0 +1,66 @@
+<terra-base-toolbar>
+    <div class="btn-group" role="group">
+        <terra-button
+                inputIcon="icon-save icon_dist_top"
+                inputTooltipText="{{'save' | translate:lang}}"
+                inputTooltipPlacement="bottom"
+                [inputIsDisabled]="isLoading"
+                inputIcon="icon-save"
+                [inputIsLarge]="false"
+                (outputClicked)="saveSettings()">
+        </terra-button>
+    </div>
+</terra-base-toolbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <terra-portlet inputPortletHeader="{{'invoiceGuaranteedSettings' | translate:lang}}">
+                <terra-checkbox 
+                    inputCaption="{{'paymentActive' | translate:lang }}"
+                    #viewChildUsePaymentCb>
+                </terra-checkbox>
+                <terra-text-input
+                    inputName="{{'displayName' | translate:lang }}"
+                    [(ngModel)]="displayName">
+                </terra-text-input>
+                <terra-number-input
+                    inputName="{{'minTotal' | translate:lang }}"
+                    [(ngModel)]="basketMinTotal">
+                </terra-number-input>
+                <terra-number-input
+                    inputName="{{'maxTotal' | translate:lang }}"
+                    [(ngModel)]="basketMaxTotal">
+                </terra-number-input>
+                <terra-text-input
+                    inputName="{{'iconURL' | translate:lang }}"
+                    [(ngModel)]="iconURL">
+                </terra-text-input>
+                <!-- <terra-checkbox
+                    inputCaption="{{'guaranteedOrFactoring' | translate:lang }}"
+                    #viewGuaranteedOrFactoringCb>
+                </terra-checkbox> -->
+            </terra-portlet>
+        </div>
+    </div>
+    <!-- <div class="row" *ngIf='viewGuaranteedOrFactoringCb.value'>
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <terra-portlet inputPortletHeader="{{'invoiceFactoringReturnReasons' | translate:lang}}">
+                <terra-select-box
+                    inputName="{{'reasonCodeCancel' | translate:lang }}"
+                    [inputListBoxValues]="returnReasonList"
+                    [(ngModel)]="reasonCodeCancel">
+                </terra-select-box>
+                <terra-select-box
+                    inputName="{{'reasonCodeReturn' | translate:lang }}"
+                    [inputListBoxValues]="returnReasonList"
+                    [(ngModel)]="reasonCodeReturn">
+                </terra-select-box>
+                <terra-select-box
+                    inputName="{{'reasonCodeCredit' | translate:lang }}"
+                    [inputListBoxValues]="returnReasonList"
+                    [(ngModel)]="reasonCodeCredit">
+                </terra-select-box>
+            </terra-portlet>
+        </div>
+    </div> -->
+</div>

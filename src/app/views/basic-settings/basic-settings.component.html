@@ -1,0 +1,42 @@
+<terra-base-toolbar>
+    <div class="btn-group" role="group">
+        <terra-button
+                inputIcon="icon-save icon_dist_top"
+                inputTooltipText="{{'save' | translate:lang}}"
+                inputTooltipPlacement="bottom"
+                [inputIsDisabled]="isLoading"
+                inputIcon="icon-save"
+                [inputIsLarge]="false"
+                (outputClicked)="saveSettings()">
+        </terra-button>
+    </div>
+</terra-base-toolbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <terra-portlet inputPortletHeader="{{'basicSettings' | translate:lang}}">
+                <terra-text-input
+                        inputTooltipPlacement="bottom"
+                        inputTooltipText="{{'publicKeyTooltip' | translate:lang }}"
+                        [inputIsDisabled]="isLoading"
+                        inputName="{{'publicKey' | translate:lang }}"
+                        [(ngModel)]="publicKey"
+                >
+                </terra-text-input>
+                <terra-text-input
+                        inputTooltipPlacement="bottom"
+                        inputTooltipText="{{'privateKeyTooltip' | translate:lang }}"
+                        [inputIsDisabled]="isLoading"
+                        inputName="{{'privateKey' | translate:lang }}"
+                        [(ngModel)]="privateKey"
+                >
+                </terra-text-input>
+                <terra-select-box
+                    inputName="{{'apiMode' | translate:lang }}"
+                    [inputListBoxValues]="apiModeList"
+                    [(ngModel)]="apiMode">
+                </terra-select-box>
+            </terra-portlet>
+        </div>
+    </div>
+</div>

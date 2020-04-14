@@ -1,0 +1,41 @@
+<terra-base-toolbar>
+    <div class="btn-group" role="group">
+        <terra-button
+                inputIcon="icon-save icon_dist_top"
+                inputTooltipText="{{'save' | translate:lang}}"
+                inputTooltipPlacement="bottom"
+                [inputIsDisabled]="isLoading"
+                inputIcon="icon-save"
+                [inputIsLarge]="false"
+                (outputClicked)="saveSettings()">
+        </terra-button>
+    </div>
+</terra-base-toolbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <terra-portlet inputPortletHeader="{{'invoiceSettings' | translate:lang}}">
+                <terra-checkbox 
+                    inputCaption="{{'paymentActive' | translate:lang }}"
+                    #viewChildUsePaymentCb>
+                </terra-checkbox>
+                <terra-text-input
+                    inputName="{{'displayName' | translate:lang }}"
+                    [(ngModel)]="displayName">
+                </terra-text-input>
+                <terra-number-input
+                    inputName="{{'minTotal' | translate:lang }}"
+                    [(ngModel)]="basketMinTotal">
+                </terra-number-input>
+                <terra-number-input
+                    inputName="{{'maxTotal' | translate:lang }}"
+                    [(ngModel)]="basketMaxTotal">
+                </terra-number-input>
+                <terra-text-input
+                    inputName="{{'iconURL' | translate:lang }}"
+                    [(ngModel)]="iconURL">
+                </terra-text-input>
+            </terra-portlet>
+        </div>
+    </div>
+</div>

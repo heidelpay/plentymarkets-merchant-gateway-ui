@@ -1,0 +1,43 @@
+<div class="loading" [hidden]="!isLoading">
+    <div class="icon-referrer_backend loading-backend"></div>
+    <div class="loading-text">Loading
+        <span class="dot-one">.</span>
+        <span class="dot-two">.</span>
+        <span class="dot-three">.</span>
+    </div>
+</div>
+
+<div *ngIf="action == 'basic-settings'" [hidden]="isLoading">
+    <basic-settings></basic-settings>
+</div>
+<div *ngIf="action == 'invoice-settings'" [hidden]="isLoading">
+    <invoice-settings></invoice-settings>
+</div>
+<div *ngIf="action == 'invoice-guaranteed-settings'" [hidden]="isLoading">
+    <invoice-guaranteed-settings></invoice-guaranteed-settings>
+</div>
+<div *ngIf="action == 'invoice-guaranteedb2b-settings'" [hidden]="isLoading">
+    <invoice-guaranteedb2b-settings></invoice-guaranteedb2b-settings>
+</div>
+<div *ngIf="action == 'credit-card-settings'" [hidden]="isLoading">
+    <credit-card-settings></credit-card-settings>
+</div>
+<div *ngIf="action == 'sepa-settings'" [hidden]="isLoading">
+    <sepa-settings></sepa-settings>
+</div>
+<div *ngIf="action == 'sepa-guaranteed-settings'" [hidden]="isLoading">
+    <sepa-guaranteed-settings></sepa-guaranteed-settings>
+</div>
+<div *ngIf="action == 'paypal-settings'" [hidden]="isLoading">
+    <paypal-settings></paypal-settings>
+</div>
+<div *ngIf="action == 'ideal-settings'" [hidden]="isLoading">
+    <ideal-settings></ideal-settings>
+</div>
+<div *ngIf="action == 'sofort-settings'" [hidden]="isLoading">
+    <sofort-settings></sofort-settings>
+</div>
+<div *ngIf="action == 'flexipay-settings'" [hidden]="isLoading">
+    <flexipay-settings></flexipay-settings>
+</div>
+
