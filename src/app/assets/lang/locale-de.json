@@ -25,7 +25,7 @@
 	"creditCardSettings": "Kreditkarteneinstellungen",
 	"creditCardMode": "Transaktionsmodus",
 	"directDebit": "Lastschrift",
-	"authorizationCapture": "Authorisation mit Erfassung",
+	"authorizationCapture": "Autorisierung mit Erfassung",
 	"sandbox": "Sandbox",
 	"production": "Produktion",
 	"apiMode": "API Modus",
