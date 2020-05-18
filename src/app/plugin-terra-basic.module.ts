@@ -49,8 +49,8 @@ import { IdealSettingsService } from './views/ideal-settings/ideal-settings.serv
 import { SofortSettingsComponent } from './views/sofort-settings/sofort-settings.component';
 import { SofortSettingsService } from './views/sofort-settings/sofort-settings.service';
 
-import { FlexipaySettingsComponent } from './views/flexipay-settings/flexipay-settings.component';
-import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-settings.service';
+import { FlexipayDirectSettingsComponent } from './views/flexipay-direct-settings/flexipay-direct-settings.component';
+import { FlexipayDirectSettingsService } from './views/flexipay-direct-settings/flexipay-direct-settings.service';
 
 @NgModule({
     imports:      [
@@ -74,7 +74,7 @@ import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-sett
         PaypalSettingsComponent,
         IdealSettingsComponent,
         SofortSettingsComponent,
-        FlexipaySettingsComponent
+        FlexipayDirectSettingsComponent
     ],
     providers:    [
         {
@@ -95,7 +95,7 @@ import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-sett
         PaypalSettingsService,
         IdealSettingsService,
         SofortSettingsService,
-        FlexipaySettingsService
+        FlexipayDirectSettingsService
     ],
     bootstrap:    [
         PluginTerraBasicComponent
