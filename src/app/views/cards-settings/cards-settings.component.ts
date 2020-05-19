@@ -14,7 +14,7 @@ import {
 import { CardsSettingsService } from './cards-settings.service';
 
 @Component({
-    selector: 'credit-card-settings',
+    selector: 'cards-settings',
     template: require('./cards-settings.component.html'),
     styles:   [require('./cards-settings.component.scss')],
 })
@@ -36,10 +36,10 @@ export class CardsSettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private creditCardSettingsService:CardsSettingsService
+        private cardsSettingsService:CardsSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = creditCardSettingsService;
+        this.service = cardsSettingsService;
     }
 
     public ngOnInit():void
