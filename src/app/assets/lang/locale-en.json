@@ -29,7 +29,7 @@
 	"sandbox": "Sandbox",
 	"production": "Production",
 	"apiMode": "Api mode",
-	"sepaSettings": "SEPA settings",
+	"sepaDirectDebitSettings": "SEPA Direct Debit settings",
 	"companyName": "Company name",
 	"paypalSettings": "Paypal settings",
 	"idealSettings": "iDEAL settings",

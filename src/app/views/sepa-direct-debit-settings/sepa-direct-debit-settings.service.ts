@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { localConfig } from '../../../../config/localConfig';
 
 @Injectable()
-export class SepaSettingsService extends TerraBaseService
+export class SepaDirectDebitSettingsService extends TerraBaseService
 {
     private bearer:string = '';
 
@@ -28,7 +28,7 @@ export class SepaSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/sepa-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/sepa-direct-debit-settings';
 
         return this.mapRequest(
             this.http.get(url, {
@@ -43,7 +43,7 @@ export class SepaSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/sepa-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/sepa-direct-debit-settings';
 
         return this.mapRequest(
             this.http.post(url, data, {headers: this.headers}));
