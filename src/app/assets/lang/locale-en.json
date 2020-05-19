@@ -30,6 +30,7 @@
 	"production": "Production",
 	"apiMode": "Api mode",
 	"sepaDirectDebitSettings": "SEPA Direct Debit settings",
+	"sepaDirectDebitGuaranteedSettings": "SEPA Direct Debit settings",
 	"companyName": "Company name",
 	"paypalSettings": "Paypal settings",
 	"idealSettings": "iDEAL settings",

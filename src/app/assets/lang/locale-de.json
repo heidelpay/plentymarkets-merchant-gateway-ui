@@ -30,6 +30,7 @@
 	"production": "Produktion",
 	"apiMode": "API Modus",
 	"sepaDirectDebitSettings": "SEPA Lastschrift Einstellungen",
+	"sepaDirectDebitGuaranteedSettings": "SEPA versicherte Lastschrift settings",
 	"companyName": "Firmenname",
 	"paypalSettings": "Paypal Einstellungen",
 	"idealSettings": "iDEAL Einstellungen",
