@@ -22,7 +22,7 @@
 	"missingReasonCodes": "Missing return reason IDs",
 	"invoiceGuaranteedSettings": "Invoice guaranteed settings",
 	"invoiceGuaranteedB2BSettings": "Invoice guaranteed B2B settings",
-	"creditCardSettings": "Credit Card settings",
+	"cardsSettings": "Credit Card settings",
 	"paymentMode": "Transaction mode",
 	"directDebit": "Direct debit",
 	"authorizationCapture": "Authorization with capture",
