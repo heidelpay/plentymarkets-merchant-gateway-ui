@@ -13,7 +13,7 @@ import {
 import { FlexipayDirectSettingsService } from './flexipay-direct-settings.service';
 
 @Component({
-    selector: 'flexipay-settings',
+    selector: 'flexipay-direct-settings',
     template: require('./flexipay-direct-settings.component.html'),
     styles:   [require('./flexipay-direct-settings.component.scss')],
 })
@@ -33,10 +33,10 @@ export class FlexipayDirectSettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private flexipaySettingsService:FlexipayDirectSettingsService
+        private flexipayDirectSettingsService:FlexipayDirectSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = flexipaySettingsService;
+        this.service = flexipayDirectSettingsService;
     }
 
     public ngOnInit():void
