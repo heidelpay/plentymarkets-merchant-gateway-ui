@@ -34,5 +34,5 @@
 	"paypalSettings": "Paypal settings",
 	"idealSettings": "iDEAL settings",
 	"sofortSettings": "SOFORT settings",
-	"flexipaySettings": "FlexiPay Direct settings"
+	"flexipayDirectSettings": "FlexiPay Direct settings"
 }
