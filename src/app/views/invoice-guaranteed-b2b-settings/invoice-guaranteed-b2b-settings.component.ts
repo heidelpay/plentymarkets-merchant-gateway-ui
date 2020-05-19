@@ -11,14 +11,14 @@ import {
     TerraCheckboxComponent,
     TerraSelectBoxValueInterface
 } from '@plentymarkets/terra-components';
-import { InvoiceGuaranteedB2BSettingsService } from './invoice-guaranteedb2b-settings.service';
+import { InvoiceGuaranteedB2bSettingsService } from './invoice-guaranteed-b2b-settings.service';
 
 @Component({
-    selector: 'invoice-guaranteedb2b-settings',
-    template: require('./invoice-guaranteedb2b-settings.component.html'),
-    styles:   [require('./invoice-guaranteedb2b-settings.component.scss')],
+    selector: 'invoice-guaranteed-b2b-settings',
+    template: require('./invoice-guaranteed-b2b-settings.component.html'),
+    styles:   [require('./invoice-guaranteed-b2b-settings.component.scss')],
 })
-export class InvoiceGuaranteedB2BSettingsComponent implements OnInit
+export class InvoiceGuaranteedB2bSettingsComponent implements OnInit
 {
     @ViewChild('viewChildUsePaymentCb')
     public viewChildUsePaymentCb:TerraCheckboxComponent;
@@ -27,7 +27,7 @@ export class InvoiceGuaranteedB2BSettingsComponent implements OnInit
 
     private isLoading:boolean = true;
     private alert:TerraAlertComponent;
-    private service:InvoiceGuaranteedB2BSettingsService;
+    private service:InvoiceGuaranteedB2bSettingsService;
 
     private displayName:string = '';
     private basketMinTotal:Number;
@@ -40,10 +40,10 @@ export class InvoiceGuaranteedB2BSettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private invoiceGuaranteedSettingsService:InvoiceGuaranteedB2BSettingsService
+        private invoiceGuaranteedB2bSettingsService:InvoiceGuaranteedB2bSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = invoiceGuaranteedSettingsService;
+        this.service = invoiceGuaranteedB2bSettingsService;
     }
 
     public ngOnInit():void

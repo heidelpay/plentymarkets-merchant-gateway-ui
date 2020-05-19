@@ -28,8 +28,8 @@ import { InvoiceSettingsService } from './views/invoice-settings/invoice-setting
 import { InvoiceGuaranteedSettingsComponent } from './views/invoice-guaranteed-settings/invoice-guaranteed-settings.component';
 import { InvoiceGuaranteedSettingsService } from './views/invoice-guaranteed-settings/invoice-guaranteed-settings.service';
 
-import { InvoiceGuaranteedB2BSettingsComponent } from './views/invoice-guaranteedb2b-settings/invoice-guaranteedb2b-settings.component';
-import { InvoiceGuaranteedB2BSettingsService } from './views/invoice-guaranteedb2b-settings/invoice-guaranteedb2b-settings.service';
+import { InvoiceGuaranteedB2bSettingsComponent } from './views/invoice-guaranteed-b2b-settings/invoice-guaranteed-b2b-settings.component';
+import { InvoiceGuaranteedB2bSettingsService } from './views/invoice-guaranteed-b2b-settings/invoice-guaranteed-b2b-settings.service';
 
 import { CardsSettingsComponent } from './views/cards-settings/cards-settings.component';
 import { CardsSettingsService } from './views/cards-settings/cards-settings.service';
@@ -67,7 +67,7 @@ import { FlexipayDirectSettingsService } from './views/flexipay-direct-settings/
         BasicSettingsComponent,
         InvoiceSettingsComponent,
         InvoiceGuaranteedSettingsComponent,
-        InvoiceGuaranteedB2BSettingsComponent,
+        InvoiceGuaranteedB2bSettingsComponent,
         CardsSettingsComponent,
         SepaDirectDebitSettingsComponent,
         SepaDirectDebitGuaranteedSettingsComponent,
@@ -88,7 +88,7 @@ import { FlexipayDirectSettingsService } from './views/flexipay-direct-settings/
         BasicSettingsService,
         InvoiceSettingsService,
         InvoiceGuaranteedSettingsService,
-        InvoiceGuaranteedB2BSettingsService,
+        InvoiceGuaranteedB2bSettingsService,
         CardsSettingsService,
         SepaDirectDebitSettingsService,
         SepaDirectDebitGuaranteedSettingsService,

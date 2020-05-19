@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { localConfig } from '../../../../config/localConfig';
 
 @Injectable()
-export class InvoiceGuaranteedB2BSettingsService extends TerraBaseService
+export class InvoiceGuaranteedB2bSettingsService extends TerraBaseService
 {
     private bearer:string = '';
 
@@ -28,7 +28,7 @@ export class InvoiceGuaranteedB2BSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/invoice-guaranteedb2b-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/invoice-guaranteed-b2b-settings';
 
         return this.mapRequest(
             this.http.get(url, {
@@ -43,7 +43,7 @@ export class InvoiceGuaranteedB2BSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/invoice-guaranteedb2b-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/invoice-guaranteed-b2b-settings';
 
         return this.mapRequest(
             this.http.post(url, data, {headers: this.headers}));
