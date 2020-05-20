@@ -14,7 +14,7 @@
 	"errorWhileSavingSettings": "Error saving settings",
 	"errorOnLoadingSettings": "Error loading settings",
 	"successSaveSettings": "Settings saved",
-	"invoiceGuaranteedSettings": "Invoice guaranteed",
+	"invoiceGuaranteedSettings": "Invoice guaranteed B2C",
 	"invoiceGuaranteedB2BSettings": "Invoice guaranteed B2B",
 	"cardsSettings": "Credit/Debit Card",
 	"paymentMode": "Transaction mode",
