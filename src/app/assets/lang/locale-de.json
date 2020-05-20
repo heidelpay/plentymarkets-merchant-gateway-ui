@@ -26,8 +26,8 @@
 	"sepaDirectDebitSettings": "SEPA Lastschrift",
 	"sepaDirectDebitGuaranteedSettings": "SEPA versicherte Lastschrift",
 	"companyName": "Firmenname",
-	"paypalSettings": "Paypal Einstellungen",
-	"idealSettings": "iDEAL Einstellungen",
-	"sofortSettings": "SOFORT Einstellungen",
+	"paypalSettings": "Paypal",
+	"idealSettings": "iDEAL",
+	"sofortSettings": "SOFORT",
 	"flexipayDirectSettings": "FlexiPay Direct"
 }
