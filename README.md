@@ -7,7 +7,8 @@ Learn how to create your first plentymarkets plugin https://developers.plentymar
 ## Installation 
 1. **Clone this repo**
 2. **Install the current nodejs LTS version from (https://nodejs.org/en/)**
-3. **Run npm install within this project locally**
+3. **From Admin PowerShell run `npm install -g --production windows-build-tools`**
+3. **Run `npm install` within this project locally**
     
 ## Run developer mode 
 
