@@ -45,7 +45,7 @@ export class CardsSettingsComponent implements OnInit
     public ngOnInit():void
     {
         this.paymentModeList = [{
-            caption: this.translation.translate('directDebit'),
+            caption: this.translation.translate('charge'),
             value: "directDebit"
         },
         {
