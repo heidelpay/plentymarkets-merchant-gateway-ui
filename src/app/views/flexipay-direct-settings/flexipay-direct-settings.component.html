@@ -14,15 +14,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
-            <terra-portlet inputPortletHeader="{{'sepaSettings' | translate:lang}}">
+            <terra-portlet inputPortletHeader="{{'flexipayDirectSettings' | translate:lang}}">
                 <terra-checkbox 
                     inputCaption="{{'paymentActive' | translate:lang }}"
                     #viewChildUsePaymentCb>
                 </terra-checkbox>
-                <terra-text-input
-                    inputName="{{'companyName' | translate:lang }}"
-                    [(ngModel)]="companyName">
-                </terra-text-input>
                 <terra-text-input
                     inputName="{{'displayName' | translate:lang }}"
                     [(ngModel)]="displayName">

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { localConfig } from '../../../../config/localConfig';
 
 @Injectable()
-export class CreditCardSettingsService extends TerraBaseService
+export class CardsSettingsService extends TerraBaseService
 {
     private bearer:string = '';
 
@@ -28,7 +28,7 @@ export class CreditCardSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/credit-card-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/cards-settings';
 
         return this.mapRequest(
             this.http.get(url, {
@@ -43,7 +43,7 @@ export class CreditCardSettingsService extends TerraBaseService
         this.setAuthorization();
         this.setHeader();
 
-        let url:string = this.url + '/rest/' + localConfig.pluginName + '/credit-card-settings';
+        let url:string = this.url + '/rest/' + localConfig.pluginName + '/cards-settings';
 
         return this.mapRequest(
             this.http.post(url, data, {headers: this.headers}));

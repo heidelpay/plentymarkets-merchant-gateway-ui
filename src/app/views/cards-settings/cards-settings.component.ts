@@ -11,21 +11,21 @@ import {
     TerraCheckboxComponent,
     TerraSelectBoxValueInterface
 } from '@plentymarkets/terra-components';
-import { CreditCardSettingsService } from './credit-card-settings.service';
+import { CardsSettingsService } from './cards-settings.service';
 
 @Component({
-    selector: 'credit-card-settings',
-    template: require('./credit-card-settings.component.html'),
-    styles:   [require('./credit-card-settings.component.scss')],
+    selector: 'cards-settings',
+    template: require('./cards-settings.component.html'),
+    styles:   [require('./cards-settings.component.scss')],
 })
-export class CreditCardSettingsComponent implements OnInit
+export class CardsSettingsComponent implements OnInit
 {
     @ViewChild('viewChildUsePaymentCb')
     public viewChildUsePaymentCb:TerraCheckboxComponent;
 
     private isLoading:boolean = true;
     private alert:TerraAlertComponent;
-    private service:CreditCardSettingsService;
+    private service:CardsSettingsService;
 
     private displayName:string = '';
     private basketMinTotal:Number;
@@ -36,16 +36,16 @@ export class CreditCardSettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private creditCardSettingsService:CreditCardSettingsService
+        private cardsSettingsService:CardsSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = creditCardSettingsService;
+        this.service = cardsSettingsService;
     }
 
     public ngOnInit():void
     {
         this.paymentModeList = [{
-            caption: this.translation.translate('directDebit'),
+            caption: this.translation.translate('charge'),
             value: "directDebit"
         },
         {

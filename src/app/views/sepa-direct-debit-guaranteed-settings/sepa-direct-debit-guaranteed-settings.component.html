@@ -14,11 +14,15 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
-            <terra-portlet inputPortletHeader="{{'creditCardSettings' | translate:lang}}">
+            <terra-portlet inputPortletHeader="{{'sepaDirectDebitGuaranteedSettings' | translate:lang}}">
                 <terra-checkbox 
                     inputCaption="{{'paymentActive' | translate:lang }}"
                     #viewChildUsePaymentCb>
                 </terra-checkbox>
+                <terra-text-input
+                    inputName="{{'companyName' | translate:lang }}"
+                    [(ngModel)]="companyName">
+                </terra-text-input>
                 <terra-text-input
                     inputName="{{'displayName' | translate:lang }}"
                     [(ngModel)]="displayName">
@@ -35,11 +39,6 @@
                     inputName="{{'iconURL' | translate:lang }}"
                     [(ngModel)]="iconURL">
                 </terra-text-input>
-                <terra-select-box
-                    inputName="{{'paymentMode' | translate:lang }}"
-                    [inputListBoxValues]="paymentModeList"
-                    [(ngModel)]="paymentMode">
-                </terra-select-box>
             </terra-portlet>
         </div>
     </div>

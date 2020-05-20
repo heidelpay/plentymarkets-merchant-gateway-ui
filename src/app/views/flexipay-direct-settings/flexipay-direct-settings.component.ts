@@ -10,21 +10,21 @@ import {
     TerraAlertComponent,
     TerraCheckboxComponent
 } from '@plentymarkets/terra-components';
-import { FlexipaySettingsService } from './flexipay-settings.service';
+import { FlexipayDirectSettingsService } from './flexipay-direct-settings.service';
 
 @Component({
-    selector: 'flexipay-settings',
-    template: require('./flexipay-settings.component.html'),
-    styles:   [require('./flexipay-settings.component.scss')],
+    selector: 'flexipay-direct-settings',
+    template: require('./flexipay-direct-settings.component.html'),
+    styles:   [require('./flexipay-direct-settings.component.scss')],
 })
-export class FlexipaySettingsComponent implements OnInit
+export class FlexipayDirectSettingsComponent implements OnInit
 {
     @ViewChild('viewChildUsePaymentCb')
     public viewChildUsePaymentCb:TerraCheckboxComponent;
 
     private isLoading:boolean = true;
     private alert:TerraAlertComponent;
-    private service:FlexipaySettingsService;
+    private service:FlexipayDirectSettingsService;
 
     private displayName:string = '';
     private basketMinTotal:Number;
@@ -33,10 +33,10 @@ export class FlexipaySettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private flexipaySettingsService:FlexipaySettingsService
+        private flexipayDirectSettingsService:FlexipayDirectSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = flexipaySettingsService;
+        this.service = flexipayDirectSettingsService;
     }
 
     public ngOnInit():void

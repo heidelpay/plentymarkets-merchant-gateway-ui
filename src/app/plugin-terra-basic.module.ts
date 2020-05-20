@@ -28,17 +28,17 @@ import { InvoiceSettingsService } from './views/invoice-settings/invoice-setting
 import { InvoiceGuaranteedSettingsComponent } from './views/invoice-guaranteed-settings/invoice-guaranteed-settings.component';
 import { InvoiceGuaranteedSettingsService } from './views/invoice-guaranteed-settings/invoice-guaranteed-settings.service';
 
-import { InvoiceGuaranteedB2BSettingsComponent } from './views/invoice-guaranteedb2b-settings/invoice-guaranteedb2b-settings.component';
-import { InvoiceGuaranteedB2BSettingsService } from './views/invoice-guaranteedb2b-settings/invoice-guaranteedb2b-settings.service';
+import { InvoiceGuaranteedB2bSettingsComponent } from './views/invoice-guaranteed-b2b-settings/invoice-guaranteed-b2b-settings.component';
+import { InvoiceGuaranteedB2bSettingsService } from './views/invoice-guaranteed-b2b-settings/invoice-guaranteed-b2b-settings.service';
 
-import { CreditCardSettingsComponent } from './views/credit-card-settings/credit-card-settings.component';
-import { CreditCardSettingsService } from './views/credit-card-settings/credit-card-settings.service';
+import { CardsSettingsComponent } from './views/cards-settings/cards-settings.component';
+import { CardsSettingsService } from './views/cards-settings/cards-settings.service';
 
-import { SepaSettingsComponent } from './views/sepa-settings/sepa-settings.component';
-import { SepaSettingsService } from './views/sepa-settings/sepa-settings.service';
+import { SepaDirectDebitSettingsComponent } from './views/sepa-direct-debit-settings/sepa-direct-debit-settings.component';
+import { SepaDirectDebitSettingsService } from './views/sepa-direct-debit-settings/sepa-direct-debit-settings.service';
 
-import { SepaGuaranteedSettingsComponent } from './views/sepa-guaranteed-settings/sepa-guaranteed-settings.component';
-import { SepaGuaranteedSettingsService } from './views/sepa-guaranteed-settings/sepa-guaranteed-settings.service';
+import { SepaDirectDebitGuaranteedSettingsComponent } from './views/sepa-direct-debit-guaranteed-settings/sepa-direct-debit-guaranteed-settings.component';
+import { SepaDirectDebitGuaranteedSettingsService } from './views/sepa-direct-debit-guaranteed-settings/sepa-direct-debit-guaranteed-settings.service';
 
 import { PaypalSettingsComponent } from './views/paypal-settings/paypal-settings.component';
 import { PaypalSettingsService } from './views/paypal-settings/paypal-settings.service';
@@ -49,8 +49,8 @@ import { IdealSettingsService } from './views/ideal-settings/ideal-settings.serv
 import { SofortSettingsComponent } from './views/sofort-settings/sofort-settings.component';
 import { SofortSettingsService } from './views/sofort-settings/sofort-settings.service';
 
-import { FlexipaySettingsComponent } from './views/flexipay-settings/flexipay-settings.component';
-import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-settings.service';
+import { FlexipayDirectSettingsComponent } from './views/flexipay-direct-settings/flexipay-direct-settings.component';
+import { FlexipayDirectSettingsService } from './views/flexipay-direct-settings/flexipay-direct-settings.service';
 
 @NgModule({
     imports:      [
@@ -67,14 +67,14 @@ import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-sett
         BasicSettingsComponent,
         InvoiceSettingsComponent,
         InvoiceGuaranteedSettingsComponent,
-        InvoiceGuaranteedB2BSettingsComponent,
-        CreditCardSettingsComponent,
-        SepaSettingsComponent,
-        SepaGuaranteedSettingsComponent,
+        InvoiceGuaranteedB2bSettingsComponent,
+        CardsSettingsComponent,
+        SepaDirectDebitSettingsComponent,
+        SepaDirectDebitGuaranteedSettingsComponent,
         PaypalSettingsComponent,
         IdealSettingsComponent,
         SofortSettingsComponent,
-        FlexipaySettingsComponent
+        FlexipayDirectSettingsComponent
     ],
     providers:    [
         {
@@ -88,14 +88,14 @@ import { FlexipaySettingsService } from './views/flexipay-settings/flexipay-sett
         BasicSettingsService,
         InvoiceSettingsService,
         InvoiceGuaranteedSettingsService,
-        InvoiceGuaranteedB2BSettingsService,
-        CreditCardSettingsService,
-        SepaSettingsService,
-        SepaGuaranteedSettingsService,
+        InvoiceGuaranteedB2bSettingsService,
+        CardsSettingsService,
+        SepaDirectDebitSettingsService,
+        SepaDirectDebitGuaranteedSettingsService,
         PaypalSettingsService,
         IdealSettingsService,
         SofortSettingsService,
-        FlexipaySettingsService
+        FlexipayDirectSettingsService
     ],
     bootstrap:    [
         PluginTerraBasicComponent

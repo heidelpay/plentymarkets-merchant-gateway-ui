@@ -10,21 +10,21 @@ import {
     TerraAlertComponent,
     TerraCheckboxComponent
 } from '@plentymarkets/terra-components';
-import { SepaGuaranteedSettingsService } from './sepa-guaranteed-settings.service';
+import { SepaDirectDebitSettingsService } from './sepa-direct-debit-settings.service';
 
 @Component({
-    selector: 'sepa-guaranteed-settings',
-    template: require('./sepa-guaranteed-settings.component.html'),
-    styles:   [require('./sepa-guaranteed-settings.component.scss')],
+    selector: 'sepa-direct-debit-settings',
+    template: require('./sepa-direct-debit-settings.component.html'),
+    styles:   [require('./sepa-direct-debit-settings.component.scss')],
 })
-export class SepaGuaranteedSettingsComponent implements OnInit
+export class SepaDirectDebitSettingsComponent implements OnInit
 {
     @ViewChild('viewChildUsePaymentCb')
     public viewChildUsePaymentCb:TerraCheckboxComponent;
 
     private isLoading:boolean = true;
     private alert:TerraAlertComponent;
-    private service:SepaGuaranteedSettingsService;
+    private service:SepaDirectDebitSettingsService;
 
     private displayName:string = '';
     private basketMinTotal:Number;
@@ -34,10 +34,10 @@ export class SepaGuaranteedSettingsComponent implements OnInit
 
     constructor(
         public translation:TranslationService,
-        private sepaGuaranteedSettingsService:SepaGuaranteedSettingsService
+        private sepaDirectDebitSettingsService:SepaDirectDebitSettingsService
     ) {
         this.alert = TerraAlertComponent.getInstance();
-        this.service = sepaGuaranteedSettingsService;
+        this.service = sepaDirectDebitSettingsService;
     }
 
     public ngOnInit():void
