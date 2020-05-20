@@ -1,14 +1,12 @@
 import {
     Component,
-    OnInit,
-    ViewChild
+    OnInit
 } from '@angular/core';
 import {
     TranslationService
 } from 'angular-l10n';
 import {
-    TerraAlertComponent,
-    TerraSelectBoxValueInterface
+    TerraAlertComponent
 } from '@plentymarkets/terra-components';
 import { BasicSettingsService } from './basic-settings.service';
 
@@ -25,8 +23,6 @@ export class BasicSettingsComponent implements OnInit
 
     private publicKey:string;
     private privateKey:string;
-    private apiModeList:Array<TerraSelectBoxValueInterface> = [];
-    private apiMode:string = 'sandbox';
 
     constructor(
         public translation:TranslationService,
@@ -38,13 +34,6 @@ export class BasicSettingsComponent implements OnInit
 
     public ngOnInit():void
     {
-        this.apiModeList = [{
-            caption: this.translation.translate('sandbox'),
-            value: 'sandbox'
-        },{
-            caption: this.translation.translate('production'),
-            value: 'production'
-        }];
         this.loadSettings();
     }
 
@@ -57,7 +46,6 @@ export class BasicSettingsComponent implements OnInit
                 if (response.success === true) {
                     this.publicKey = response.settings.publicKey;
                     this.privateKey = response.settings.privateKey;
-                    this.apiMode = response.settings.apiMode;
                 } else {
                     this.alert.addAlertForPlugin(
                         {
@@ -88,8 +76,7 @@ export class BasicSettingsComponent implements OnInit
         this.isLoading = true;
         let data:Object = {
             publicKey: this.publicKey,
-            privateKey: this.privateKey,
-            apiMode: this.apiMode,
+            privateKey: this.privateKey
         };
 
         this.service.saveBasicSettings(data).subscribe(
